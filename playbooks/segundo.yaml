@@ -1,0 +1,14 @@
+- name: segundo play para varia
+  hosts: "{{maquina}}"
+  vars:
+   - maquina: null
+  tasks:
+   - name : executa onde na maquina var
+     package:
+      name: vim
+
+
+   - name: criando arquivo com o nome da maqina
+     file:
+      path: "{{arquivo}}"
+      state: touch

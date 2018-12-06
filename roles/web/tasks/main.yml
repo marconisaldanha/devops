@@ -1,0 +1,15 @@
+---
+# tasks file for web
+ 
+  - name: instala nas maquinas
+    include: apch.yaml
+ 
+  - name: serviço
+    include: servicos.yaml
+    
+  - name: faz site
+    include: site.yaml 
+  
+ 
+
+

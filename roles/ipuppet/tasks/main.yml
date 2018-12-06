@@ -1,0 +1,13 @@
+# tasks file for ipuppet
+ - name: install bibli
+   include: atuali.yaml
+ 
+ - name: srv
+   include: serv.yaml
+
+ - name: agnt
+   include: agnt.yaml
+
+  
+
+

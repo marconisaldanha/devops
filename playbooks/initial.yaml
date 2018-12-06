@@ -1,0 +1,4 @@
+- name: chama role um
+  hosts: all
+  roles:
+   - initial

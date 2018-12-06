@@ -1,0 +1,10 @@
+<marquee>
+<h1>
+nome da maquina = {{ansible_hostname}}
+<br>
+meu nome = {{meunome}}
+<br>
+
+
+</h1>
+</marquee>

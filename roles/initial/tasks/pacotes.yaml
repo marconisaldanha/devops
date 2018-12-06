@@ -1,0 +1,7 @@
+- name: pct pdra
+  package:
+   name:
+    - htop
+    - vim 
+    - cowsay
+    - figlet

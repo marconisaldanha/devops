@@ -1,0 +1,14 @@
+---
+# tasks file for initial
+
+
+- name: usuario padroe
+  include: user.yaml
+
+- name: pcts pdr
+  include: pacotes.yaml
+
+- name: conf padra
+  include: conf.yaml
+
+

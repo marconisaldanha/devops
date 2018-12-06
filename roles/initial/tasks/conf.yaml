@@ -1,0 +1,21 @@
+- name: copiando de rq dns
+  copy:
+   src: files/resolv
+   dest: /etc/resolv.conf
+
+- name: add line arq
+  lineinfile:
+   path: /etc/hosts
+   line: "192.168.200.1 desktop.dexter.com.br"
+
+- name: arq conf var
+  template:
+   src: templates/config
+   dest: /srv/config.php
+
+
+- name: add blc
+  blockinfile:
+   path: /srv/config.php
+   block: |
+     vaca vai pro espeto

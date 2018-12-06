@@ -1,0 +1,5 @@
+<marquee>
+Hostname = $HOSTNAME
+<br>
+Meu nome = $SEUNOME
+</marquee>

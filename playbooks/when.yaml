@@ -1,0 +1,24 @@
+- name: trabalhando com condiçoes
+  hosts: all
+  tasks:
+    - name: adicionando user
+      user:
+       name: "{{item}}"
+      with_items:
+       - developer
+       - devops
+       - marconi
+
+
+
+    - name: instalando epel-release
+      package:
+       name: epel-release
+      when: ansible_os_family == "RedHat"
+
+    - name: resto
+      package: 
+       name: "{{item}}"
+      with_items:
+        - vim
+        - htop
